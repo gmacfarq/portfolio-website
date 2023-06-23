@@ -49,5 +49,4 @@ def handle_contact_form():
             return render_template('index.html', form=form, success=True)
 
     elif request.method == 'GET':
-        print(os.environ.get("EMAIL_PWD"))
         return render_template('index.html', form=form)
