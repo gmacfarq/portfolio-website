@@ -1,59 +1,153 @@
-<main>
-  <section>
-    <h2>Contact Me</h2>
-    <span>Get in touch</span>
+<!DOCTYPE html>
+<html>
 
-    <div>
-        <div>
-            <div></div>
-                <div>
-                    <h3>Call/Text</h3>
-                    <span>(650) 430-8712</span>
+<head>
+    <title>Graham MacFarquhar</title>
+    <meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="../static/css/style.css">
+    <link rel="stylesheet" href="../static/css/bootstrap.min.css">
+</head>
 
+<body>
+    <!--navigation bar-->
+    <header class="header" id="header">
+        <nav class="nav container">
+            <a href="#" class="nav__logo">Graham MacFarquhar</a>
+
+            <div class="nav__menu" id="nav-menu">
+                <ul class="nav__list grid">
+                    <li class="nav__item">
+                        <a href="#home" class="nav__link active-link">
+                            <i class="uil uil-estate nav__icon"></i> Home
+                        </a>
+                    </li>
+
+                    <li class="nav__item">
+                        <a href="#about" class="nav__link">
+                            <i class="uil uil-user nav__icon"></i> About
+                        </a>
+                    </li>
+
+                    <li class="nav__item">
+                        <a href="#skills" class="nav__link">
+                            <i class="uil uil-file-alt nav__icon"></i> Skills
+                        </a>
+                    </li>
+
+                    <li class="nav__item">
+                        <a href="#history" class="nav__link">
+                            <i class="uil uil-briefcase-alt nav__icon"></i> History
+                        </a>
+                    </li>
+
+                    <li class="nav__item">
+                        <a href="#portfolio" class="nav__link">
+                            <i class="uil uil-scenery nav__icon"></i> Portfolio
+                        </a>
+                    </li>
+
+                    <li class="nav__item">
+                        <a href="#contact" class="nav__link">
+                            <i class="uil uil-message nav__icon"></i> Contact
+                        </a>
+                    </li>
+                </ul>
+                <i class="uil uil-times nav__close" id="nav-close"></i>
+            </div>
+            <div class="nav__btns">
+                <!-- Light/Dark Theme Change -->
+                <i class="uil uil-moon change-theme" id="theme-button"></i>
+
+                <div class="nav__toggle" id="nav-toggle">
+                    <i class="uil uil-apps"></i>
                 </div>
             </div>
+        </nav>
+    </header>
+    </header>
+
+
+    <main>
+        <!--landing page-->
+        <article class="container" id="landing">
+            <img src="../static/img/profile.png">
+            <div class="container">
+                <h1>It's me, Graham!</h1>
+                <ul id="attrib">
+                    <li>Software Engineer</li>
+                    <li>Web Developer</li>
+                    <li>Rithm 31 Student</li>
+                </ul>
+            </div>
+        </article>
+        <!--about me section-->
+        <article id="about">
+            <h3>About Me</h3>
+            <p>I am a recent graduate of Carnegie Mellon University. I have strong technical skills and an academic
+                background in computer engineering, circuits and web development.
+                I enjoy running, photography, sustainable farming, reading about unfamiliar topics, and traveling
+                anywhere
+                that I might experience refreshing perspectives</p>
+        </article>
+        <!--contact me section-->
+        <article id="contact">
+            <h2>Contact Me</h2>
+            <span>Get in touch</span>
+
             <div>
                 <div>
-                    <h3>Email</h3>
-                    <span>gmacfarquhar57@gmail.com</span>
+                    <div></div>
+                    <div>
+                        <h3>Call/Text</h3>
+                        <span>(650) 430-8712</span>
 
-                </div>
-            </div>
-            <div >
-                <div>
-                    <h3 >Location</h3>
-                    <span >United States</span>
-                </div>
-            </div>
-        </div>
-
-        <form method="POST" action="/" >
-
-            {% for message in form.email.errors %}
-            <div>{{ message }}</div>
-            {% endfor %}
-
-            {{ form.hidden_tag() }}
-            <div>
-                <div>
-                    <label>Name</label>
-                    {{ form.name(class_="contact__input") }}
+                    </div>
                 </div>
                 <div>
-                    <label>Email</label>
-                    {{ form.email(class_="contact__input") }}
+                    <div>
+                        <h3>Email</h3>
+                        <span>gmacfarquhar57@gmail.com</span>
+
+                    </div>
+                </div>
+                <div>
+                    <div>
+                        <h3>Location</h3>
+                        <span>United States</span>
+                    </div>
                 </div>
             </div>
 
-            <div>
-                <label>Message</label>
-                {{ form.message(rows="7", cols="0", class_="contact__input") }}
+            <form method="POST" action="/">
+
+                {% for message in form.email.errors %}
+                <div>{{ message }}</div>
+                {% endfor %}
+
+                {{ form.hidden_tag() }}
+                <div>
+                    <div>
+                        <label>Name</label>
+                        {{ form.name(class_="contact__input") }}
+                    </div>
+                    <div>
+                        <label>Email</label>
+                        {{ form.email(class_="contact__input") }}
+                    </div>
+                </div>
+
+                <div>
+                    <label>Message</label>
+                    {{ form.message(rows="7", cols="0", class_="contact__input") }}
+                </div>
+                {{ form.recaptcha }}
+
+                <button type="submit">Send Message</button>
+            </form>
             </div>
-            {{ form.recaptcha }}
+        </article>
+    </main>
 
-            <button type="submit">Send Message</button>
-        </form>
-    </div>
+</body>
 
-  </section>
-</main>
+</html>
