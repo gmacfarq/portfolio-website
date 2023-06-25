@@ -808,6 +808,14 @@ section .row span {
     justify-content: center;
 }
 
+@media(max-width: 37.5em) {
+    .contact-wrapper {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+}
+
 .grid {
     display: grid;
 }
@@ -816,6 +824,12 @@ section .row span {
     margin: 5px;
     padding: .4rem;
     width: 80%;
+}
+
+@media(max-width: 37.5em) {
+    .contact-input {
+        width: 60%;
+    }
 }
 
 .contact-content :focus {
@@ -833,10 +847,6 @@ section .row span {
     font-size: 2rem
 }
 
-.contact-form {}
-
-.g-recaptcha {}
-
 .form-wrapper {
     display: flex;
     flex-direction: column;
@@ -845,6 +855,12 @@ section .row span {
 
 .captcha-wrapper {
     transform: scale(0.75);
+}
+
+@media(max-width: 37.5em) {
+    .captcha-wrapper {
+        transform: scale(0.5);
+    }
 }
 
 .info-wrapper {
