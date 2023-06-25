@@ -5,9 +5,12 @@ from flask import Flask, render_template, request, flash
 from forms import ContactMeForm
 from flask_mail import Mail, Message
 
+
 load_dotenv()
 
 app = Flask(__name__)
+
+
 app.config["SECRET_KEY"] = "secretive"
 app.config["MAIL_SERVER"] = "smtp.gmail.com"
 app.config["MAIL_PORT"] = 465
