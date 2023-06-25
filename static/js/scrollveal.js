@@ -6,7 +6,7 @@ const defaultProps = {
   desktop: true,
   mobile: true,
 };
-// Hero Section
+
 ScrollReveal().reveal(".hero-title", {
   ...defaultProps,
   delay: 500,
@@ -49,17 +49,10 @@ ScrollReveal().reveal(".about-wrapper__info", {
 });
 
 /* Projects Section */
-ScrollReveal().reveal(".project-wrapper__text", {
+ScrollReveal().reveal("#projects", {
   ...defaultProps,
   delay: 600,
   origin: window.innerWidth > 768 ? "left" : "bottom",
-});
-
-ScrollReveal().reveal(".project-wrapper__image", {
-  ...defaultProps,
-  delay: 600,
-  scale: 0.9,
-  origin: window.innerWidth > 768 ? "right" : "bottom",
 });
 
 /* Contact Section */

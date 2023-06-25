@@ -7,7 +7,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <link rel="preconnect" href="https://fonts.gstatic.com" />
   <link rel="preconnect" href="https://cdnjs.cloudflare.com" />
-  <link rel="icon" type="image/png" href="../static/img/devfolio-logo.png" />
+  <link rel="icon" type="image/png" href="../static/img/favicon.png" />
 
   <!-- Title -->
   <title>Graham MacFarquhar</title>
@@ -17,8 +17,9 @@
   <!-- <link rel="stylesheet" href="../static/css/styles.css" /> -->
   <link rel="preload" as="style" href="../static/css/main.css" />
   <link rel="stylesheet" href="../static/css/main.css" />
+  <link rel="stylesheet" href="../static/css/swiper-bundle.min.css">
 
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" />
 
 </head>
 
@@ -78,87 +79,105 @@
     <div class="container">
       <div class="project-wrapper">
         <h2 class="section-title dark-blue-text">Projects</h2>
-
-        <!-- Each .row is a project -->
-        <article class="row">
-          <div class="project-wrapper__text">
-            <h3 class="project-wrapper__text-title">Project Title</h3>
-            <p class="project-wrapper__text-info">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit.
-              Deleniti voluptas, sit nam perspiciatis tempore aspernatur ullam
-              necessitatibus impedit repellendus vero sed ipsa eos beatae ab
-              sint saepe nostrum! Enim, perferendis.
-            </p>
-            <div class="project-wrapper__text-btns">
-              <a href="#" target="_blank" rel="noopener noreferrer" class="cta-btn cta-btn--hero cta-btn--projects">See
-                Live</a>
-              <a href="#" target="_blank" class="cta-btn text-color-main">Source Code</a>
-            </div>
-          </div>
-
-          <div class="project-wrapper__image">
-            <a href="#" target="_blank" rel="noopener noreferrer">
-              <div class="thumbnail rounded">
-                <img src="../static/img/project.jpg" class="img-fluid" alt="Project Image" width="1366" height="767" />
+        <div class="portfolio_container container swiper-container swiper mySwiper">
+          <div class="swiper-wrapper">
+            <!-- Each .row is a project -->
+            <article class="row grid swiper-slide">
+              <div class="project-wrapper__text">
+                <h3 class="project-wrapper__text-title">Project Title</h3>
+                <p class="project-wrapper__text-info">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Deleniti voluptas, sit nam perspiciatis tempore aspernatur ullam
+                  necessitatibus impedit repellendus vero sed ipsa eos beatae ab
+                  sint saepe nostrum! Enim, perferendis.
+                </p>
+                <div class="project-wrapper__text-btns">
+                  <a href="#" target="_blank" rel="noopener noreferrer"
+                    class="cta-btn cta-btn--hero cta-btn--projects">See
+                    Live</a>
+                  <a href="#" target="_blank" class="cta-btn text-color-main">Source Code</a>
+                </div>
               </div>
-            </a>
-          </div>
-        </article>
-        <!-- /END Project -->
 
-        <!-- Each .row is a project -->
-        <article class="row">
-          <div class="project-wrapper__text">
-            <h3 class="project-wrapper__text-title">Project Title</h3>
-            <p class="project-wrapper__text-info">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit.
-              Deleniti voluptas, sit nam perspiciatis tempore aspernatur ullam
-              necessitatibus impedit repellendus vero sed ipsa eos beatae ab
-              sint saepe nostrum! Enim, perferendis.
-            </p>
-            <div class="project-wrapper__text-btns">
-              <a href="#" target="_blank" rel="noopener noreferrer" class="cta-btn cta-btn--hero cta-btn--projects">See
-                Live</a>
-              <a href="#" target="_blank" class="cta-btn text-color-main">Source Code</a>
-            </div>
-          </div>
-
-          <div class="project-wrapper__image">
-            <a href="#" target="_blank" rel="noopener noreferrer">
-              <div class="thumbnail rounded">
-                <img src="../static/img/project.jpg" class="img-fluid" alt="Project Image" width="1366" height="767" />
+              <div class="project-wrapper__image">
+                <a href="#" target="_blank" rel="noopener noreferrer">
+                  <div class="thumbnail rounded">
+                    <img src="../static/img/project.jpg" class="img-fluid" alt="Project Image" width="1366"
+                      height="767" />
+                  </div>
+                </a>
               </div>
-            </a>
-          </div>
-        </article>
-        <!-- /END Project -->
+            </article>
+            <!-- /END Project -->
 
-        <!-- Each .row is a project -->
-        <article class="row">
-          <div class="project-wrapper__text">
-            <h3 class="project-wrapper__text-title">Project Title</h3>
-            <p class="project-wrapper__text-info">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit.
-              Deleniti voluptas, sit nam perspiciatis tempore aspernatur ullam
-              necessitatibus impedit repellendus vero sed ipsa eos beatae ab
-              sint saepe nostrum! Enim, perferendis.
-            </p>
-            <div class="project-wrapper__text-btns">
-              <a href="#" target="_blank" rel="noopener noreferrer" class="cta-btn cta-btn--hero cta-btn--projects">See
-                Live</a>
-              <a href="#" target="_blank" class="cta-btn text-color-main">Source Code</a>
-            </div>
-          </div>
-
-          <div class="project-wrapper__image">
-            <a href="#" target="_blank" rel="noopener noreferrer">
-              <div class="thumbnail rounded">
-                <img src="../static/img/project.jpg" class="img-fluid" alt="Project Image" width="1366" height="767" />
+            <!-- Each .row is a project -->
+            <article class="row grid swiper-slide">
+              <div class="project-wrapper__text">
+                <h3 class="project-wrapper__text-title">Project Title</h3>
+                <p class="project-wrapper__text-info">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Deleniti voluptas, sit nam perspiciatis tempore aspernatur ullam
+                  necessitatibus impedit repellendus vero sed ipsa eos beatae ab
+                  sint saepe nostrum! Enim, perferendis.
+                </p>
+                <div class="project-wrapper__text-btns">
+                  <a href="#" target="_blank" rel="noopener noreferrer"
+                    class="cta-btn cta-btn--hero cta-btn--projects">See
+                    Live</a>
+                  <a href="#" target="_blank" class="cta-btn text-color-main">Source Code</a>
+                </div>
               </div>
-            </a>
+
+              <div class="project-wrapper__image">
+                <a href="#" target="_blank" rel="noopener noreferrer">
+                  <div class="thumbnail rounded">
+                    <img src="../static/img/project.jpg" class="img-fluid" alt="Project Image" width="1366"
+                      height="767" />
+                  </div>
+                </a>
+              </div>
+            </article>
+            <!-- /END Project -->
+
+            <!-- Each .row is a project -->
+            <article class="row grid swiper-slide">
+              <div class="project-wrapper__text">
+                <h3 class="project-wrapper__text-title">Project Title</h3>
+                <p class="project-wrapper__text-info">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Deleniti voluptas, sit nam perspiciatis tempore aspernatur ullam
+                  necessitatibus impedit repellendus vero sed ipsa eos beatae ab
+                  sint saepe nostrum! Enim, perferendis.
+                </p>
+                <div class="project-wrapper__text-btns">
+                  <a href="#" target="_blank" rel="noopener noreferrer"
+                    class="cta-btn cta-btn--hero cta-btn--projects">See
+                    Live</a>
+                  <a href="#" target="_blank" class="cta-btn text-color-main">Source Code</a>
+                </div>
+              </div>
+
+              <div class="project-wrapper__image">
+                <a href="#" target="_blank" rel="noopener noreferrer">
+                  <div class="thumbnail rounded">
+                    <img src="../static/img/project.jpg" class="img-fluid" alt="Project Image" width="1366"
+                      height="767" />
+                  </div>
+                </a>
+              </div>
+            </article>
+            <!-- /END Project -->
           </div>
-        </article>
-        <!-- /END Project -->
+          <!-- Arrows -->
+          <div class="swiper-button-next">
+            <i class="uil uil-angle-right-b swiper-portfolio-icon"></i>
+          </div>
+          <div class="swiper-button-prev">
+            <i class="uil uil-angle-left-b swiper-portfolio-icon"></i>
+          </div>
+          <!-- Pagination -->
+          <div class="swiper-pagination"></div>
+        </div>
       </div>
     </div>
   </section>
@@ -183,10 +202,12 @@
         <i class="fa fa-angle-up fa-2x" aria-hidden="true"></i>
       </a>
       <div class="social-links">
-        <a href="https://www.instagram.com/itsa_graham/" target="_blank" rel="noopener noreferrer" aria-label="instagram">
+        <a href="https://www.instagram.com/itsa_graham/" target="_blank" rel="noopener noreferrer"
+          aria-label="instagram">
           <i class="fa-brands fa-instagram"></i>
         </a>
-        <a href="https://www.linkedin.com/in/graham-macf/" target="_blank" rel="noopener noreferrer" aria-label="linkedin">
+        <a href="https://www.linkedin.com/in/graham-macf/" target="_blank" rel="noopener noreferrer"
+          aria-label="linkedin">
           <i class="fa-brands fa-linkedin"></i>
         </a>
         <a href="https://github.com/gmacfarq" target="_blank" rel="noopener noreferrer" aria-label="github">
@@ -201,12 +222,10 @@
     </div>
   </footer>
   <!-- END Footer Section -->
+  <script src="../static/js/swiper-bundle.min.js"></script>
+  <script src="../static/js/swiper.js"></script>
   <script defer src="../static/js/scrollreveal.min.js"></script>
-    <script
-      defer
-      type="text/javascript"
-      src="../static/js/scrollveal.js"
-    ></script>
+  <script defer type="text/javascript" src="../static/js/scrollveal.js"></script>
   <script src="../static/js/index.js"></script>
   <script src="../static/js/vanilla-tilt.min.js"></script>
   <script type="text/javascript" src="../static/js/valtilt.js"></script>
