@@ -35,13 +35,13 @@ ScrollReveal().reveal(".section-title", {
   delay: 400,
   distance: "0px",
 });
-ScrollReveal().reveal(".about-wrapper__image", {
+ScrollReveal().reveal(".about-wrapper-image", {
   ...defaultProps,
   delay: 600,
   scale: 0.5,
 });
 
-ScrollReveal().reveal(".about-wrapper__info", {
+ScrollReveal().reveal(".about-wrapper-info", {
   ...defaultProps,
   delay: 700,
   distance: "100px",
@@ -57,6 +57,11 @@ ScrollReveal().reveal(".mySwiper", {
 
 /* Contact Section */
 ScrollReveal().reveal(".contact-wrapper", {
+  ...defaultProps,
+  delay: 600,
+});
+
+ScrollReveal().reveal(".cta-wrapper", {
   ...defaultProps,
   delay: 600,
 });
