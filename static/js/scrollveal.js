@@ -49,7 +49,7 @@ ScrollReveal().reveal(".about-wrapper__info", {
 });
 
 /* Projects Section */
-ScrollReveal().reveal("#projects", {
+ScrollReveal().reveal(".mySwiper", {
   ...defaultProps,
   delay: 600,
   origin: window.innerWidth > 768 ? "left" : "bottom",

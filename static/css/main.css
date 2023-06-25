@@ -183,6 +183,33 @@ screen and (-ms-high-contrast: none) {
     transform: translate(-9%, -25%) rotate(45deg)
 }
 
+.cta-btn--contact {
+    background-color: transparent;
+    border-radius: 0;
+    color: #fff;
+    border: 2px solid #fff
+}
+
+.cta-btn--contact::after {
+    background: #fff
+}
+
+.cta-btn--contact:hover {
+    color: var(--main-color);
+    text-decoration: none;
+    box-shadow: none
+}
+
+@media(max-width: 37.5em) {
+    .cta-btn--contact:hover {
+        color: #fff
+    }
+}
+
+.cta-btn--contact:hover::after {
+    width: 100%
+}
+
 .cta-btn--resume {
     border-radius: 0;
     color: #fff;
@@ -740,7 +767,7 @@ section .row span {
     width: 100%;
     display: flex;
     align-items: center;
-    flex-wrap: wrap
+    flex-wrap: wrap;
 }
 
 #projects .project-wrapper__image {
@@ -774,3 +801,4 @@ section .row span {
         transform: none
     }
 }
+

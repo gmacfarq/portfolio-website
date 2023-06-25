@@ -188,8 +188,70 @@
     <div class="container">
       <h2 class="section-title">Contact Me</h2>
       <div class="contact-wrapper">
-        <p class="contact-wrapper__text">Let's craft a digital masterpiece!</p>
-        <a href="#" class="cta-btn cta-btn--resume">Send Message</a>
+        <h2 class="section__title">Contact Me</h2>
+        <span class="section__subtitle">Get in touch</span>
+
+        <div class="contact__container container grid">
+          <div>
+            <div class="contact__information">
+              <i class="uil uil-phone contact__icon"></i>
+
+              <div>
+                <h3 class="contact__title">Call/Text</h3>
+                <span class="contact__subtitle">(650) 430-8712</span>
+
+              </div>
+            </div>
+            <div class="contact__information">
+              <i class="uil uil-envelope contact__icon"></i>
+
+              <div>
+                <h3 class="contact__title">Email</h3>
+                <span class="contact__subtitle">gmacfarquhar57@gmail.com</span>
+
+              </div>
+            </div>
+            <div class="contact__information">
+              <i class="uil uil-map-marker contact__icon"></i>
+
+              <div>
+                <h3 class="contact__title">Location</h3>
+                <span class="contact__subtitle">United States</span>
+
+              </div>
+            </div>
+          </div>
+          <!-- <form action="" class="contact__form grid"> -->
+          <form id="contact-form" method="POST" action="/" class="contact__form grid">
+
+            {% for message in form.email.errors %}
+            <div class="flash">{{ message }}</div>
+            {% endfor %}
+
+            {{ form.hidden_tag() }}
+            <div class="contact__input grid">
+              <div class="contact__content">
+                <label for="name" class="contact__label">Name</label>
+                <!-- <input type="text" class="contact__input"> -->
+                {{ form.name(class_="contact__input") }}
+              </div>
+              <div class="contact__content">
+                <label for="email" class="contact__label">Email</label>
+                <!-- <input type="email" class="contact__input"> -->
+                {{ form.email(class_="contact__input") }}
+              </div>
+            </div>
+
+            <div class="contact__content">
+              <label for="message" class="contact__label">Message</label>
+              <!-- <textarea name="" id="" cols="0" rows="7" class="contact__input"></textarea> -->
+              {{ form.message(rows="7", cols="0", class_="contact__input") }}
+            </div>
+            {{ form.recaptcha }}
+            <p class="contact-wrapper__text">Let's craft a digital masterpiece!</p>
+            <button class="cta-btn cta-btn--contact" type="submit">Send Message</button>
+          </form>
+        </div>
       </div>
     </div>
   </section>
