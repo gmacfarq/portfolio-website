@@ -59,6 +59,12 @@ a:hover {
     z-index: 3;
 }
 
+@media(max-width: 75em) {
+    .nav-wrapper {
+        display: none;
+    }
+}
+
 .navbar {
     display: grid;
     grid-template-columns: 1fr 3fr;
