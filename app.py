@@ -19,8 +19,8 @@ app.config["MAIL_USE_SSL"] = True
 app.config["MAIL_USERNAME"] = 'gmacfarquhar57@gmail.com'
 app.config["MAIL_PASSWORD"] = os.environ.get("EMAIL_PWD")
 app.config["RECAPTCHA_USE_SSL"] = False
-app.config["RECAPTCHA_PUBLIC_KEY"] = "6LeIxAcTAAAAAJcZVRqyHh71UMIEGNQ_MXjiZKhI"
-app.config["RECAPTCHA_PRIVATE_KEY"] = "6LeIxAcTAAAAAGG-vFI1TnRWxMZNFuojJ4WifJWe"
+app.config["RECAPTCHA_PUBLIC_KEY"] = os.environ.get("RECAPTCHA_PUBLIC_KEY")
+app.config["RECAPTCHA_PRIVATE_KEY"] = os.environ.get("RECAPTCHA_PRIVATE_KEY")
 app.config["RECAPTCHA_OPTIONS"] = {'theme':'white'}
 
 mail = Mail(app)
