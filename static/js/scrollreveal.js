@@ -56,7 +56,7 @@ ScrollReveal().reveal(".skills-container", {
 });
 
 /* History Section */
-ScrollReveal().reveal(".history-container", {
+ScrollReveal().reveal(".qualifications-container", {
   ...defaultProps,
   delay: 600,
   origin: window.innerWidth > 768 ? "right" : "bottom",

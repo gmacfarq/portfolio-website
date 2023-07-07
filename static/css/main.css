@@ -66,9 +66,9 @@ a:hover {
 }
 
 .navbar {
-    display: grid;
-    grid-template-columns: 1fr 3fr;
+    display: flex;
     align-items: center;
+    justify-content: space-between;
     height: 50px;
     overflow: hidden;
 }
@@ -84,10 +84,9 @@ a:hover {
     margin-left: 20px;
 }
 
-.navbar ul {
-    list-style: none;
-    display: grid;
-    grid-template-columns: repeat(6, 1fr);
+.navbar .nav-links {
+    display: flex;
+    flex-direction: row;
     justify-self: end;
 }
 
@@ -96,7 +95,7 @@ a:hover {
     font-size: 2rem;
     font-weight: 400;
     text-decoration: none;
-    padding: 10px;
+    padding: 1rem;
     transition: color 0.3s ease-out;
 }
 
@@ -761,7 +760,7 @@ section .row span {
 /*==================== SKILLS ====================*/
 .skills-container {
     font-size: 1.5rem;
-    width:50%;
+    width:60%;
     row-gap: 0;
     column-gap: 2rem;
     margin-top: 1.5rem;
@@ -834,7 +833,7 @@ section .row span {
     font-weight: 500;
 }
 
-#history {
+#qualifications {
     background-color: transparent;
     color: #272341;
     height: 100%;
@@ -842,7 +841,7 @@ section .row span {
 }
 
 @media(max-width: 75em) {
-    #history {
+    #qualifications {
         height: 100%;
     }
 }
