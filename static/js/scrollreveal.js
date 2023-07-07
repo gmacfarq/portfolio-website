@@ -70,6 +70,11 @@ ScrollReveal().reveal(".mySwiper", {
 });
 
 /* Contact Section */
+ScrollReveal().reveal(".contact-wrapper-text", {
+  ...defaultProps,
+  delay: 600,
+});
+
 ScrollReveal().reveal(".contact-wrapper", {
   ...defaultProps,
   delay: 600,
