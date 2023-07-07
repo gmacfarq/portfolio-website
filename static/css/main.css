@@ -760,7 +760,7 @@ section .row span {
 /*==================== SKILLS ====================*/
 .skills-container {
     font-size: 1.5rem;
-    width:60%;
+    width: 60%;
     row-gap: 0;
     column-gap: 2rem;
     margin-top: 1.5rem;
@@ -776,13 +776,13 @@ section .row span {
 
 @media(max-width: 37.5em) {
     .skills-container {
-        width: 80%;
+        width: 100%;
         font-size: 1.2rem;
     }
 }
 
 
-.skills-content{
+.skills-content {
     margin-bottom: 2.5rem;
     min-width: 25%;
 }
@@ -833,7 +833,7 @@ section .row span {
     font-weight: 500;
 }
 
-#qualifications {
+#experience {
     background-color: transparent;
     color: #272341;
     height: 100%;
@@ -841,8 +841,121 @@ section .row span {
 }
 
 @media(max-width: 75em) {
-    #qualifications {
+    #experience {
         height: 100%;
+    }
+}
+
+.timeline{
+    display:flex;
+    align-items:center;
+}
+
+.experience-container {
+    width: 50%;
+    font-size: 1.5rem;
+}
+
+.experience-tabs {
+    display: flex;
+    justify-content: space-evenly;
+    margin-bottom: 2rem;
+}
+
+.experience-button {
+    font-size: 2rem;
+    font-weight: 500;
+    color: var(--main-color);
+    cursor: pointer;
+    padding:0 1rem 0 1rem;
+}
+
+.experience-button:hover {
+    color: var(--main-color);
+}
+
+.experience-icon {
+    font-size: 2.3rem;
+    margin-right: 0.25rem;
+}
+
+.experience-data {
+    display: grid;
+    grid-template-columns: 1fr max-content 1fr;
+    column-gap: 1.5rem;
+}
+
+.experience-title {
+    font-size: 1rem;
+    font-weight: 500
+}
+
+.experience-subtitle {
+    display: inline-block;
+    max-width: 25rem;
+    font-size: 1.5rem;
+    margin-bottom: var(--mb-1);
+}
+
+.experience-calendar {
+    font-size: 1rem;
+    color: var(--secondary-color);
+}
+
+.experience-circle {
+    display: inline-block;
+    width: 13px;
+    height: 13px;
+    background-color: var(--main-color);
+    border-radius: 50%;
+}
+
+.experience-line {
+    display: block;
+    width: 1px;
+    height: 100%;
+    background-color: var(--main-color);
+    transform: translate(-7px, 30px);
+}
+
+.experience-content {
+    display: block;
+}
+
+.experience-inactive {
+    display: none;
+}
+
+
+
+@media(max-width: 37.5em) {
+    .experience-content {
+        width: 100%;
+    }
+
+    .experience-container {
+        width: 100%;
+    }
+
+    .experience-data {
+        gap: 0.5rem;
+    }
+
+    .experience-sections {
+        display: flex;
+        justify-content: center;
+    }
+
+    .experience-tabs {
+        justify-content: center;
+    }
+
+    .experience-button {
+        margin: 0 1rem;
+    }
+
+    .experience-sections {
+        grid-template-columns: 0.5fr;
     }
 }
 
