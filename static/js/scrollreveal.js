@@ -48,6 +48,20 @@ ScrollReveal().reveal(".about-wrapper-info", {
   origin: window.innerWidth > 768 ? "left" : "top",
 });
 
+/* Skills Section */
+ScrollReveal().reveal(".skills-container", {
+  ...defaultProps,
+  delay: 600,
+  origin: window.innerWidth > 768 ? "left" : "bottom",
+});
+
+/* History Section */
+ScrollReveal().reveal(".history-container", {
+  ...defaultProps,
+  delay: 600,
+  origin: window.innerWidth > 768 ? "right" : "bottom",
+});
+
 /* Projects Section */
 ScrollReveal().reveal(".mySwiper", {
   ...defaultProps,

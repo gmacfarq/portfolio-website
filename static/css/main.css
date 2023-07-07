@@ -40,7 +40,7 @@ a:hover {
 }
 
 .section-title {
-    margin-bottom: 4.5rem;
+    margin-bottom: 1rem;
     font-size: 4rem;
     text-transform: uppercase
 }
@@ -73,12 +73,12 @@ a:hover {
     overflow: hidden;
 }
 
-.navbar p{
+.navbar p {
     color: #000;
     font-size: 2rem;
     font-weight: 400;
     text-decoration: none;
-    padding:10px;
+    padding: 10px;
     width: auto;
     justify-self: start;
     margin-left: 20px;
@@ -96,7 +96,7 @@ a:hover {
     font-size: 2rem;
     font-weight: 400;
     text-decoration: none;
-    padding:10px;
+    padding: 10px;
     transition: color 0.3s ease-out;
 }
 
@@ -742,22 +742,96 @@ section .row span {
     background-color: transparent;
     color: #272341;
     height: 100%;
-    padding: 15rem 0 10rem 0;
+    padding-top: 15rem;
 }
 
 @media(max-width: 75em) {
     #skills {
         height: 100%;
         margin-top: 0rem;
-        padding-bottom: 10%
     }
 }
 
 @media(max-width: 37.5em) {
     #skills {
         margin-top: 0rem;
-        padding-bottom: 10%
     }
+}
+
+/*==================== SKILLS ====================*/
+.skills-container {
+    font-size: 1.5rem;
+    width:50%;
+    row-gap: 0;
+    column-gap: 2rem;
+    margin-top: 1.5rem;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+@media(max-width: 75em) {
+    .skills-container {
+        width: 65%;
+        font-size: 1.2rem;
+    }
+}
+
+@media(max-width: 37.5em) {
+    .skills-container {
+        width: 80%;
+        font-size: 1.2rem;
+    }
+}
+
+
+.skills-content{
+    margin-bottom: 2.5rem;
+    min-width: 25%;
+}
+
+
+.skills-header {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    margin-bottom: 2.5rem;
+}
+
+.skills-icon,
+.skills-arrow {
+    font-size: 2rem;
+    color: var(--main-color);
+}
+
+.skills-icon {
+    margin-right: .75rem;
+}
+
+
+
+.skills-data {
+    display: flex;
+    justify-content: center;
+}
+
+.skills-subtitle {
+    font-style: .813rem;
+    color: var(--secondary-color);
+}
+
+.skills-list {
+    row-gap: 1.5rem;
+    padding-left: 2.7rem;
+}
+
+.skills-titles {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: .5rem;
+}
+
+.skills-name {
+    font-style: .938rem;
+    font-weight: 500;
 }
 
 #history {
