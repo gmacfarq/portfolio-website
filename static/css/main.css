@@ -989,6 +989,12 @@ section .row span {
     }
 }
 
+@media(max-width: 37.5em) {
+    .contact-icon {
+        display: none;
+    }
+}
+
 .contact-content :focus {
     border-color: var(--secondary-color);
     outline: 0;

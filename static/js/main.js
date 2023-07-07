@@ -24,7 +24,7 @@ VanillaTilt.init(tilt, {
 });
 
 var typed = new Typed(".type", {
-  strings: ["a Web Developer.", "a Designer.", "an Engineer."],
+  strings: ["a Developer.", "a Designer.", "an Engineer."],
   smartBackspace: true,
   startDelay: 1000,
   typeSpeed: 130,
