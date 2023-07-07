@@ -17,6 +17,12 @@ html {
     scroll-behavior: smooth
 }
 
+@media(max-width: 37.5em) {
+    html {
+        font-size: 60%;
+    }
+}
+
 body {
     text-align: center;
     line-height: 1.5
@@ -408,7 +414,7 @@ section {
 section .row {
     display: grid;
     gap: 2rem;
-    grid-template-columns: 1fr 2fr;
+    grid-template-columns: 1.5fr 2fr;
     grid-template-rows: 1fr;
     padding: 0 1.5rem
 }
@@ -1041,7 +1047,9 @@ section .row span {
 
 #projects .project-wrapper-image {
     width: 90%;
-    margin: 0 auto
+    display: flex;
+    align-items: center;
+    margin: 0 auto;
 }
 
 @media(max-width: 75em) {
