@@ -353,6 +353,16 @@ screen and (-ms-high-contrast: none) {
     justify-content: center
 }
 
+.social-links.vertical-links{
+    flex-direction:column;
+}
+@media(max-width: 75em) {
+    .social-links.vertical-links{
+        flex-direction:row;
+    }
+}
+
+
 .social-links a {
     font-size: 3rem;
     display: flex;
@@ -495,10 +505,10 @@ section .row span {
 }
 
 #about .about-wrapper {
-    grid-template-columns: 1fr 1fr
+    grid-template-columns: 0.2fr 1fr 1fr
 }
 
-@media(max-width: 37.5em) {
+@media(max-width: 75em) {
     #about .about-wrapper {
         padding-bottom: 5rem;
         grid-template-columns: 1fr
