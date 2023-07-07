@@ -45,14 +45,27 @@ ScrollReveal().reveal(".about-wrapper-info", {
   ...defaultProps,
   delay: 700,
   distance: "100px",
+  origin: window.innerWidth > 768 ? "right" : "top",
+});
+
+ScrollReveal().reveal(".vertical-links", {
+  ...defaultProps,
+  delay: 700,
+  distance: "100px",
   origin: window.innerWidth > 768 ? "left" : "top",
 });
 
 /* Skills Section */
-ScrollReveal().reveal(".skills-container", {
+ScrollReveal().reveal(".skills-left", {
   ...defaultProps,
   delay: 600,
   origin: window.innerWidth > 768 ? "left" : "bottom",
+});
+
+ScrollReveal().reveal(".skills-right", {
+  ...defaultProps,
+  delay: 600,
+  origin: window.innerWidth > 768 ? "right" : "bottom",
 });
 
 /* History Section */
