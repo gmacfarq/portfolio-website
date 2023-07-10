@@ -66,7 +66,7 @@ let navHidden = true;
 hamb.addEventListener("click", () => {
   if (mobile_nav.style.display === "flex") {
     mobile_nav.style.display = "none";
-    navHidde = true;
+    navHidden = true;
   } else {
     mobile_nav.style.display = "flex";
     navHidden = false;
