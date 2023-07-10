@@ -59,5 +59,17 @@ var typed = new Typed(".type", {
   loop: true,
 });
 
+let hamb = document.getElementById("hamb");
+let mobile_nav = document.getElementById("mobile-nav");
+
+hamb.addEventListener("click", () => {
+  if (mobile_nav.style.display === "flex") {
+    mobile_nav.style.display = "none";
+  } else {
+    mobile_nav.style.display = "flex";
+  }
+})
+
+
 
 

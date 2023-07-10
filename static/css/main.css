@@ -65,12 +65,6 @@ a:hover {
     z-index: 3;
 }
 
-@media(max-width: 75em) {
-    .nav-wrapper {
-        display: none;
-    }
-}
-
 .navbar {
     display: flex;
     align-items: center;
@@ -79,7 +73,18 @@ a:hover {
     overflow: hidden;
 }
 
-.navbar p {
+.navbar p.fullname {
+    color: #000;
+    font-size: 2rem;
+    font-weight: 400;
+    text-decoration: none;
+    padding: 10px;
+    width: auto;
+    justify-self: start;
+    margin-left: 20px;
+}
+.navbar p.initials{
+    display: none;
     color: #000;
     font-size: 2rem;
     font-weight: 400;
@@ -109,11 +114,47 @@ a:hover {
     color: var(--secondary-color);
 }
 
-.text-color-main {
-    margin-left: 1rem;
-    color: var(--main-color);
-    -webkit-text-fill-color: var(--main-color)
+.nav-icon {
+    display: none;
 }
+
+@media(max-width: 1000px) {
+    .navbar p.fullname{
+        display: none;
+    }
+    .navbar p.initials{
+        display: inline;
+    }
+}
+
+@media(max-width: 700px){
+    .navbar .nav-links {
+        display: none;
+    }
+    .nav-icon{
+        display:flex;
+        justify-content: center;
+    }
+    #hamb{
+        display: block;
+        position: absolute;
+        top: 0.5rem;
+        right: 4rem;
+        height: 40px;
+    }
+    .navbar .mobile-nav {
+        display: none;
+        flex-direction: column;
+        justify-self: end;
+        position: relative;
+        background-color: rgba(255, 255, 255, 0.8);
+        top:11.63rem;
+    }
+    .navbar {
+        overflow:visible;
+    }
+}
+
 
 @supports((-webkit-background-clip: text) or (background-clip: text)) or (-webkit-background-clip: text) {
     .text-color-main {
@@ -776,7 +817,7 @@ section .row span {
 /*==================== SKILLS ====================*/
 .skills-container {
     font-size: 1.5rem;
-    width: 60%;
+    width: 65%;
     row-gap: 0;
     column-gap: 2rem;
     margin-top: 1.5rem;
@@ -884,10 +925,15 @@ section .row span {
     color: var(--main-color);
     cursor: pointer;
     padding:0 1rem 0 1rem;
+    border:1px solid #CCC;
+    background:#fff;
+    box-shadow: 0 0 5px -1px rgba(0,0,0,0.2);
+    vertical-align: middle;
+    text-align: center;
 }
 
 .experience-button:hover {
-    color: var(--main-color);
+    background:#DDD;
 }
 
 .experience-icon {
@@ -922,7 +968,7 @@ section .row span {
     display: inline-block;
     width: 13px;
     height: 13px;
-    background-color: var(--main-color);
+    background-color: var(--secondary-color);
     border-radius: 50%;
 }
 
@@ -930,7 +976,7 @@ section .row span {
     display: block;
     width: 1px;
     height: 100%;
-    background-color: var(--main-color);
+    background-color: var(--secondary-color);
     transform: translate(-7px, 30px);
 }
 
