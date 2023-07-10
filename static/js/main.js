@@ -61,12 +61,15 @@ var typed = new Typed(".type", {
 
 let hamb = document.getElementById("hamb");
 let mobile_nav = document.getElementById("mobile-nav");
+let navHidden = true;
 
 hamb.addEventListener("click", () => {
   if (mobile_nav.style.display === "flex") {
     mobile_nav.style.display = "none";
+    navHidde = true;
   } else {
     mobile_nav.style.display = "flex";
+    navHidden = false;
   }
 });
 
@@ -74,7 +77,7 @@ var lastScrollTop;
 navbar = document.getElementById('navbar');
 window.addEventListener('scroll', function () {
   var scrollTop = window.scrollY || document.documentElement.scrollTop;
-  if (scrollTop > lastScrollTop && mobile_nav.style.display == "none") {
+  if (scrollTop > lastScrollTop && navHidden) {
     navbar.style.top = '-50px';
   }
   else {
