@@ -68,7 +68,20 @@ hamb.addEventListener("click", () => {
   } else {
     mobile_nav.style.display = "flex";
   }
-})
+});
+
+var lastScrollTop;
+navbar = document.getElementById('navbar');
+window.addEventListener('scroll', function () {
+  var scrollTop = window.scrollY || document.documentElement.scrollTop;
+  if (scrollTop > lastScrollTop && mobile_nav.style.display == "none") {
+    navbar.style.top = '-50px';
+  }
+  else {
+    navbar.style.top = '0';
+  }
+  lastScrollTop = scrollTop;
+});
 
 
 
