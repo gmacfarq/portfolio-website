@@ -43,12 +43,12 @@ def handle_contact_form():
                        sender=(form.name.data, form.email.data))
             msg.body = f"Name: {form.name.data} \n Email: {form.email.data} \n Message: {form.message.data}"
             mail.send(msg)
+            flash(f"Thank you for reaching out {form.name.data}! I'll get back to you soon")
 
             """Reset form after sending email."""
             form.name.data = ""
             form.email.data = ""
             form.message.data = ""
-
             return render_template('index.html', form=form, success=True)
 
     elif request.method == 'GET':
