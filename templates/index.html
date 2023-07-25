@@ -64,7 +64,7 @@
   </div>
   {% if success %}
     <div class="success">
-        <p>Thanks for your message. I'll get back to you soon!</p>
+        <p>Thanks for your message {{name}}. I'll get back to you soon!</p>
     </div>
   {% endif %}
   <!-- Hero Section -->
@@ -295,11 +295,12 @@
         <div class="experience-button button-flex" id="educationheader">
           <i class="uil uil-graduation-cap experience-icon"></i>Education
         </div>
-        {% if success %}
-        <div class="success">
-            <p>Thanks for your message. I'll get back to you soon!</p>
+
+        <div class="experience-button button-flex" id="workheader">
+          <i class="uil uil-briefcase-alt experience-icon"></i>Work
         </div>
-        {% endif %}
+      </div>
+
       <div class="experience-sections">
         <!-- Educational experience -->
         <div class="experience-content experience-active" data-content id="education">

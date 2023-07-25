@@ -1,8 +1,8 @@
 @import"https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap";
 
 :root {
-    --main-color: #0e3402;
-    --secondary-color: #7f8e2a;
+    --main-color: #33703a;
+    --secondary-color: #43934c;
 }
 
 * {
@@ -128,7 +128,7 @@ a:hover {
     }
 }
 
-@media(max-width: 700px){
+@media(max-width: 780px){
     .navbar .nav-links {
         display: none;
     }
@@ -1205,4 +1205,14 @@ section .row span {
 
 .info-wrapper {
     display: grid;
+}
+
+.success {
+    margin: auto;
+    background-color: rgba(159, 236, 142, 0.765);
+    color: rgb(77, 77, 77);
+    text-align: center;
+    padding: 10px;
+    border-radius: 10px;
+    max-width: 80%;
 }
