@@ -28,6 +28,11 @@
   padding: 10rem;
   z-index: 1;
 }
+@media(max-width: 37.5em) {
+  .swiper {
+    padding: 6.5rem;
+  }
+}
 .swiper-vertical > .swiper-wrapper {
   flex-direction: column;
 }
