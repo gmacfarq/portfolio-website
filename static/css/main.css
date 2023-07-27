@@ -730,7 +730,7 @@ section .row span {
 .scroll-down-link {
     position: absolute;
     left: 50%;
-    bottom: 20px;
+    bottom: 10vh;
     transform: translateX(-50%)
 }
 
