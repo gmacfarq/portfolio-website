@@ -640,8 +640,8 @@ section .row span {
 }
 
 #hero {
-    min-height: 90vh;
-    height: 90vh;
+    min-height: 100vh;
+    height: 100vh;
     display: flex;
     align-items: center;
     background: #fff;
@@ -665,7 +665,9 @@ section .row span {
 
 @media(max-width: 37.5em) {
     #hero {
-        padding: 0rem 1.6rem
+        padding: 0rem 1.6rem;
+        min-height: 90vh;
+        height: 90vh;
     }
 }
 
