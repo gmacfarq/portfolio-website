@@ -4,12 +4,13 @@ from dotenv import load_dotenv
 from flask import Flask, render_template, request, flash
 from forms import ContactMeForm
 from flask_mail import Mail, Message
+from flask_compress import Compress
 
 
 load_dotenv()
 
 app = Flask(__name__)
-
+Compress(app)
 
 app.config["SECRET_KEY"] = os.environ.get("SECRET_KEY")
 app.config["MAIL_SERVER"] = "smtp.gmail.com"
