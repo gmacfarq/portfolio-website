@@ -10,7 +10,7 @@ from flask_compress import Compress
 load_dotenv()
 
 app = Flask(__name__)
-Compress(app)
+##Compress(app)
 
 app.config["SECRET_KEY"] = os.environ.get("SECRET_KEY")
 app.config["MAIL_SERVER"] = "smtp.gmail.com"
