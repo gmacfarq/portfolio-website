@@ -10,7 +10,6 @@ from flask_compress import Compress
 load_dotenv()
 
 app = Flask(__name__)
-Compress(app)
 
 app.config["SECRET_KEY"] = os.environ.get("SECRET_KEY")
 app.config["MAIL_SERVER"] = "smtp.gmail.com"
@@ -25,6 +24,7 @@ app.config["RECAPTCHA_PRIVATE_KEY"] = os.environ.get("RECAPTCHA_PRIVATE_KEY")
 app.config["RECAPTCHA_OPTIONS"] = {'theme':'white'}
 
 mail = Mail(app)
+Compress(app)
 
 @app.route('/', methods=['GET', 'POST'])
 def handle_contact_form():
