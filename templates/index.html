@@ -418,6 +418,35 @@
         <h2 class="section-title">Portfolio</h2>
         <div class="portfolio_container container swiper-container swiper mySwiper">
           <div class="swiper-wrapper">
+            <article class="row grid swiper-slide">
+              <div class="project-wrapper-text">
+                <h3 class="project-wrapper-text-title">Festy</h3>
+                <p class="project-wrapper-text-info">
+                  A platform for Spotify users and music festival goers. Users can
+                  view festival lineups and create custom playlists via Spotify.
+                  (Contact directly for access)
+                </p>
+                <p>
+                  Express, Node.js, Spotify API, Nunjucks, AWS EC2/RDS
+                </p>
+                <div class="project-wrapper-text-btns">
+                  <a href="https://festy.live/" target="_blank"
+                    rel="noopener noreferrer" class="cta-btn cta-btn--hero cta-btn--projects">See
+                    Live</a>
+                  <a href="https://github.com/gmacfarq/festy/" target="_blank" class="cta-btn text-color-main">Source
+                    Code</a>
+                </div>
+              </div>
+
+              <div class="project-wrapper-image">
+                <a href="https://festy.live/" target="_blank" rel="noopener noreferrer">
+                  <div class="thumbnail rounded">
+                    <img src="../static/img/festy.webp" class="img-fluid" alt="Project Image" width="1366"
+                      height="767" loading="lazy" />
+                  </div>
+                </a>
+              </div>
+            </article>
             <!-- Each .row is a project -->
             <article class="row grid swiper-slide">
               <div class="project-wrapper-text">
@@ -425,7 +454,7 @@
                 <p class="project-wrapper-text-info">
                   A Twitter Clone where users can like and unlike messages,
                   follow and unfollow each other, and search for existing
-                  users.
+                  users. (credentials: testuser, password)
                 </p>
                 <p>
                   Flask, Python, PostgreSQL, SQLAlchemy, Jinja, WTForms, Heroku
@@ -457,6 +486,7 @@
                 <p class="project-wrapper-text-info">
                   A job-search app that allows users to search jobs and companies,
                   apply to jobs, and update their user profile.
+                  (credentials: testuser, password)
                 </p>
                 <p>
                   React, Express, Node.js, JWTs, JSONSchema, bcrypt, PostgreSQL,
